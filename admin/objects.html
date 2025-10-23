@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Objets</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topbar admin">
+  <div class="container">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="EcoShare" class="logo">
+      <h1>EcoShare - Admin</h1>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="objects.html">Objets</a>
+      <a href="users.html">Utilisateurs</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Gestion des objets</h2>
+    <div class="toolbar form-row">
+      <input id="admin-search" placeholder="Rechercher par nom, catégorie...">
+      <button class="btn btn-success">Rechercher</button>
+      <a class="btn" href="#">+ Ajouter</a>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr><th>ID</th><th>Nom</th><th>Catégorie</th><th>Zone</th><th>Statut</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Perceuse</td><td>Outils</td><td>Tunis</td><td>Disponible</td>
+          <td>
+            <a class="btn btn-sm">✏️</a>
+            <a class="btn btn-sm btn-outline">🗑</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© EcoShare - Template</div>
+</footer>
+</body>
+</html>

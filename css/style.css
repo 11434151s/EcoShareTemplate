@@ -1,0 +1,45 @@
+/* EcoShare - style.css (eco green design) */
+:root{
+  --green:#2ecc71;
+  --dark:#2c3e50;
+  --muted:#7f8c8d;
+  --card:#ffffff;
+  --glass: rgba(236,240,241,0.8);
+}
+*{box-sizing:border-box;font-family:Inter, Poppins, Roboto, Arial, sans-serif}
+body{margin:0;background:#f6fbf6;color:var(--dark);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.topbar{background:linear-gradient(90deg, #ffffff 0%, #f2fff4 100%);border-bottom:1px solid #e9f5ee}
+.topbar .container{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;background:var(--glass)}
+nav a{margin-left:12px;color:var(--dark);text-decoration:none;font-weight:600}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(40,55,40,0.06);margin-bottom:18px}
+.search-panel h2,.list-panel h2{margin-top:0}
+.form-row{display:flex;gap:10px;align-items:center}
+input[type="text"], input, select, .form-control{padding:10px;border-radius:8px;border:1px solid #e6efe6;flex:1}
+.btn{padding:8px 14px;border-radius:999px;border:none;background:transparent;cursor:pointer}
+.btn-success{background:var(--green);color:white}
+.btn-outline{border:1px solid #dfefe0;background:transparent;padding:6px 10px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.object-card{padding:12px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f9fff5);border:1px solid #f0fff1}
+.object-card h3{margin:0 0 6px 0}
+.meta{color:var(--muted);font-size:0.9rem;margin-bottom:8px}
+.card-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:10px}
+.text-end{text-align:right}
+.footer{padding:16px;border-top:1px solid #e9f5ee;background:#fff;margin-top:30px}
+.muted{color:var(--muted)}
+.profile-header{display:flex;gap:14px;align-items:center}
+.avatar{width:84px;height:84px;border-radius:12px;background:var(--glass)}
+.stats-grid{grid-template-columns:repeat(3,1fr)}
+.stat{padding:14px;text-align:center}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #f0f6f0;text-align:left}
+.btn-sm{padding:6px 8px;border-radius:8px}
+.admin .topbar .brand h1{font-size:1.05rem}
+.autocomplete-list{margin-top:8px;background:#fff;border:1px solid #e6efe6;border-radius:8px;padding:6px;max-width:600px}
+.autocomplete-item{padding:6px;border-radius:6px;cursor:pointer}
+.autocomplete-item:hover{background:#f2fff4}
+@media (max-width:700px){
+  .form-row{flex-direction:column}
+}

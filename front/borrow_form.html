@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Demande d'emprunt - EcoShare</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="EcoShare" class="logo">
+      <h1>EcoShare</h1>
+    </div>
+    <nav>
+      <a href="index.html">Objets</a>
+      <a href="profile.html">Mon profil</a>
+      <a href="../admin/dashboard.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <h2>Faire une demande d'emprunt / échange</h2>
+    <form id="borrowForm" onsubmit="submitBorrow(event)">
+      <div class="form-row">
+        <input id="borrow-object" required placeholder="Nom de l'objet">
+        <input id="borrow-user" required placeholder="Nom d'utilisateur">
+      </div>
+      <div class="form-row">
+        <label>Début</label>
+        <input type="date" id="date-start" required>
+        <label>Fin</label>
+        <input type="date" id="date-end" required>
+      </div>
+      <div class="form-row">
+        <button class="btn btn-success" type="submit">Envoyer la demande</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© EcoShare - Template</div>
+</footer>
+
+<script>
+function submitBorrow(e){
+  e.preventDefault();
+  alert('Demande envoyée (simulation). Vérifier disponibilité côté serveur.');
+}
+</script>
+</body>
+</html>

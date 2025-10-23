@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EcoShare - Objets disponibles</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="EcoShare" class="logo">
+      <h1>EcoShare</h1>
+    </div>
+    <nav>
+      <a href="index.html">Objets</a>
+      <a href="profile.html">Mon profil</a>
+      <a href="../admin/dashboard.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="search-panel card">
+    <h2>Rechercher des objets</h2>
+    <div class="form-row">
+      <input id="q-name" type="text" placeholder="Nom de l'objet" oninput="autocompleteName(this.value)">
+      <select id="q-category">
+        <option value="">Toutes catégories</option>
+        <option>Outils</option>
+        <option>Livre</option>
+        <option>Vêtements</option>
+      </select>
+      <select id="q-zone">
+        <option value="">Toute la ville</option>
+        <option>Tunis</option>
+        <option>Sfax</option>
+        <option>Sousse</option>
+      </select>
+      <button onclick="filterList()" class="btn btn-success">Rechercher</button>
+    </div>
+    <div id="autocomplete-list" class="autocomplete-list"></div>
+  </section>
+
+  <section class="card list-panel">
+    <h2>Objets disponibles</h2>
+    <div id="objects" class="grid">
+      <!-- Exemple d'objet -->
+      <article class="object-card">
+        <h3>Tours à bois</h3>
+        <p class="meta">Catégorie: Outils · Zone: Tunis · État: Bon</p>
+        <p>Un petit tour à bois, idéal pour hobby.</p>
+        <div class="card-actions">
+          <button class="btn">Voir</button>
+          <button class="btn btn-outline">Demander</button>
+        </div>
+      </article>
+      <!-- D'autres éléments seront ajoutés dynamiquement -->
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© EcoShare - Template</div>
+</footer>
+
+<script src="../js/autocomplete.js"></script>
+</body>
+</html>
